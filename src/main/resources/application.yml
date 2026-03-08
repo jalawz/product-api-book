@@ -11,12 +11,12 @@ spring:
     hikari:
       connection-timeout: 20000
       maximum-pool-size: 5
-    url: jdbc:postgresql://localhost:5432/dev
-    username: postgres
-    password: postgres
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/dev}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
   flyway:
     schemas: products
-    user: postgres
-    password: postgres
-    url: jdbc:postgresql://localhost:5432/dev
+    user: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/dev}
     

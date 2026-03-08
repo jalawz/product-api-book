@@ -1,5 +1,6 @@
 package com.casadocodigo.productapi.model;
 
+import java.math.BigDecimal;
 import java.util.Objects;
 
 import javax.persistence.Entity;
@@ -31,7 +32,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private Float preco;
+    private BigDecimal preco;
     private String descricao;
     private String productIdentifier;
 

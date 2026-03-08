@@ -1,5 +1,6 @@
 package com.casadocodigo.productapi.dto;
 
+import java.math.BigDecimal;
 import java.util.Objects;
 
 import javax.validation.constraints.NotBlank;
@@ -25,7 +26,7 @@ public class ProductDTO {
     @NotBlank
     private String descricao;
     @NotNull
-    private Float preco;
+    private BigDecimal preco;
     @NotNull
     private CategoryDTO category;
 
