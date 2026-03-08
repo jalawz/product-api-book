@@ -54,6 +54,20 @@ http://localhost:8081/swagger-ui/index.html
 http://localhost:8081/v3/api-docs
 ```
 
+## Postman
+
+Import the files below in Postman:
+
+- `postman/product-api-book.postman_collection.json`
+- `postman/product-api-book.postman_environment.json`
+
+Then select the `product-api-book-local` environment and run requests in this order:
+
+1. `Create product`
+2. `Get all products`
+3. `Get products by category`
+4. `Get product by identifier`
+
 ## Build and Test
 
 ```bash
